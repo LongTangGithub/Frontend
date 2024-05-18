@@ -35,12 +35,12 @@ p, h1, h2, h3, h4, h5, h6 {
     position: fixed;
     inset:  0px;
     width: 25rem;
-    height: 40rem;
+    height: 45rem;
     max-width: 100vw;
     max-height: 100dvh;
     margin: auto;
 
-    border: 1px solid red;
+    box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     background-color: white;
 }
@@ -70,9 +70,10 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .change-plan {
-    border: 1px solid red;
+    background-color: #fdf5ea;
     width: 350px;
     height: 75px;
     margin: 20px 0;
@@ -97,4 +98,33 @@ h2 {
 
 a {
     margin-left: 50px;
+}
+
+.btns {
+    margin: 40px;
+}
+
+.payment-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 12px;
+    padding: 12px 70px;
+    font-weight: 600;
+    color: white;
+    background-color: #ff611d;
+    box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.15);
+    font-size: 15px;
+}
+
+.cancel-btn {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 12px;
+    padding: 12px 70px;
+    background-color: #fdf5ea;
 }
