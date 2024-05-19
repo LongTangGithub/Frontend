@@ -27,9 +27,16 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit; /* The button element doesn't inherit the font family unless you specify */
+}
+
 .header{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     width: 90%;
     margin-inline: auto;
@@ -39,15 +46,34 @@ p, h1, h2, h3, h4, h5, h6 {
 .title {
     font-size: 1.5rem;
     text-transform: uppercase;
+    flex: 1;
 }
 
 .nav-container {
     display: flex;
     gap: 1rem;
+    flex: 1;
+    justify-content: center;
 }
 
 .link {
     text-decoration: none;
     color: #000;
     font-weight: 500;
+}
+
+.btn-container {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.btn{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+
 }
