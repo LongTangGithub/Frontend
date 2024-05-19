@@ -33,7 +33,7 @@ button{
     cursor: pointer;
     font-family: inherit; /* The button element doesn't inherit the font family unless you specify */
 }
-
+/* Header */
 .header{
     display: flex;
     /* justify-content: space-between; */
@@ -43,37 +43,41 @@ button{
     padding: 1rem 0;
 }
 
-.title {
+.header__title {
     font-size: 1.5rem;
     text-transform: uppercase;
     flex: 1;
 }
 
-.nav-container {
+.header__nav-container {
     display: flex;
     gap: 1rem;
     flex: 1;
     justify-content: center;
 }
 
-.link {
+.header__link {
     text-decoration: none;
     color: #000;
     font-weight: 500;
 }
 
-.btn-container {
+/* .header__link--red {
+    color: red;
+} */
+
+.header__btn-container {
     display: flex;
     gap: 1rem;
     flex: 1;
     justify-content: flex-end;
 }
 
+/* Utility Class */
 .btn{
     border: none;
     background-color: #000;
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-
 }
