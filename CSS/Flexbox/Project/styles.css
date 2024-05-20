@@ -250,6 +250,20 @@ button{
     color: #ccc;
 }
 
+@media (max-width: 891px){
+
+}
+@media (max-width: 832px){
+    
+}
+
+@media (max-width: 693px){
+
+}
+
+@media (max-width: 409px){
+
+}
 /* Features */
 .features {
     margin-top: 10rem;
