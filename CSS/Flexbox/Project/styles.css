@@ -215,6 +215,18 @@ button{
     margin: 1rem auto;
 }
 
+/* Footer */
+.footer {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.footer__title {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
 /* Utility Class */
 .btn{
     text-decoration: none;
