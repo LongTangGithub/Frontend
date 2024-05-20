@@ -74,6 +74,50 @@ button{
     justify-content: flex-end;
 }
 
+.header__bars {
+    display: none;
+}
+
+@media (max-width: 843px) {
+    .header__title{
+        font-size: 1.2rem;
+    }
+
+    .header__link{
+        font-size: 0.8rem;
+    }
+
+    .header__btn{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 674px){
+    .header{
+        justify-content: space-between;
+    }
+
+    .header__nav-container{
+        display: none;
+    }
+
+    .header__btn-container{
+        display: none;
+    }
+
+    .header__bars{
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .header__title{
+        flex: 0 1 auto;
+    }
+}
+
+
+
 /* Hero Section */
 .hero {
     text-align: center;
@@ -226,6 +270,7 @@ button{
     font-weight: 300;
     letter-spacing: 0.1em;
 }
+
 
 /* Utility Class */
 .btn{
