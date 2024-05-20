@@ -207,6 +207,7 @@ button{
 
 .pricing__container {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -216,6 +217,8 @@ button{
     padding: 2rem;
     border-radius: 20px;
     flex: 1;
+    /* Can't go below 400px */
+    min-width: 400px;
 }
 
 .pricing__price {
@@ -250,19 +253,55 @@ button{
     color: #ccc;
 }
 
-@media (max-width: 891px){
+@media (max-width: 891px) {
+    .pricing__title {
+        font-size: 2rem;
+    }
 
+    .pricing__description{
+        font-size: 1rem;
+    }
+
+    .pricing_price {
+        font-size: 1.5rem;
+    }
 }
 @media (max-width: 832px){
-    
+    .pricing{
+        margin-top: 5rem;
+    }
+
+    .pricing__title {
+        font-size: 1.5rem;
+    }
+
+    .pricing__description{
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
+
+    .pricing_plan-description{
+        font-size: 0.9rem;
+    }
+
 }
 
 @media (max-width: 693px){
+    .pricing__title {
+        font-size: 1.3rem;
+    }
+
+
 
 }
 
 @media (max-width: 409px){
-
+    .pricing__title {
+        font-size: 1.1rem;
+    }
+    .pricing__box{
+        min-width:  290px;
+    }
 }
 /* Features */
 .features {
