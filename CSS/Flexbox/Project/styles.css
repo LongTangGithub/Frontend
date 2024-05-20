@@ -78,7 +78,7 @@ button{
     display: none;
 }
 
-@media (max-width: 843px) {
+@media (max-width: 891px) {
     .header__title{
         font-size: 1.2rem;
     }
@@ -89,10 +89,10 @@ button{
 
     .header__btn{
         font-size: 0.8rem;
-    }
+    } 
 }
 
-@media (max-width: 674px){
+@media (max-width: 713px){
     .header{
         justify-content: space-between;
     }
@@ -116,8 +116,6 @@ button{
     }
 }
 
-
-
 /* Hero Section */
 .hero {
     text-align: center;
@@ -136,8 +134,59 @@ button{
     font-size: 1.2rem;
     max-width: 60ch;
     margin: 2rem auto;
-
 }
+
+@media (max-width: 891px){
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__description {
+        font-size: 1rem;
+        margin: 1.5rem auto;
+    }
+}
+
+@media (max-width: 832px){
+    .hero{
+        margin-top: 5rem;
+    }
+
+    .hero__title{
+        font-size: 2.5rem;
+    }
+
+    .hero__description {
+        font-size: 0.9rem;
+        margin: 1rem auto;
+    }
+
+    .hero__btn{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 693px){
+    .hero__title{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 409px){
+    .hero__title{
+        font-size: 1.5rem;
+    }
+
+    .hero__description{
+        font-size: 0.8rem;
+        margin: 0.7rem auto;
+    }
+
+    .hero__btn{
+        font-size: 0.7rem;
+    }
+}
+
 /* Pricing */
 .pricing {
     margin-top: 10rem;
@@ -287,3 +336,4 @@ button{
     width: 90%;
     margin-inline: auto;
 }
+
