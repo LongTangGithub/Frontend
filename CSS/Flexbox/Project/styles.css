@@ -343,6 +343,37 @@ button{
     margin-top: 1rem;
 }
 
+@media (max-width: 891px){
+    .features__title {
+        font-size: 2rem;
+    }    
+
+    .features__description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 832px){
+    .features {
+        margin-top: 5rem;
+    }
+
+    .features__title {
+        font-size: 1.5rem;
+    }    
+
+    .features__description {
+        font-size: 0.9rem;
+        margin: 0.5rem auto;
+    }
+}
+
+@media (max-width: 409px){
+    .features__title {
+        font-size: 1.3rem;
+    }    
+}
+
 /* Contact */
 .contact {
     margin-top: 10rem;
