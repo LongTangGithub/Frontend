@@ -26,8 +26,22 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
-.wrapper {
-    background-color: purple;
-    text-align: center;
-    padding: 5rem;
+.container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.img-1{
+    width: 300px;
+    /* height: 800px; */
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+
+.img-2{
+    width: 300px;
+    /* height: 800px; */
+    object-fit: cover;
+    aspect-ratio: 3 / 1;
+    object-position: center;
 }
