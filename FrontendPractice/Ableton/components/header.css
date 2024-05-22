@@ -1,0 +1,40 @@
+.header {
+    padding: 1rem 0;
+}
+
+.ableton-logo {
+    width: 60px;
+    height: 28px;
+    object-fit: cover;
+}
+
+/* For Desktop */
+/* 2xl */
+@media (max-width: 1536px){
+
+}
+
+/* xl */
+@media (max-width: 1280px){
+
+}
+
+/* lg */
+@media (max-width: 1024px){
+
+}
+
+/* sm */
+@media (max-width: 640px){
+
+}
+
+/* md */
+@media (max-width: 768px){
+
+}
+
+/* XS */
+@media (max-width: 475px){
+
+}
