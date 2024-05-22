@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+.hero {
+    /* border: 5px solid red; */
+    height: 100dvh;
+    background-image: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../../FrontendPractice/Abstract/images/ken-cheung-KonWFWUaAuk-unsplash.webp');
+    background-size: cover;  
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__title{
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.hero__description{
+    color: white;
+    font-weight: 700;
+    max-width: 75ch;
+}
