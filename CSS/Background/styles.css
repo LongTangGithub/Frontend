@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+.wrapper {
+    border: 10px dotted black;
+    width: 500px;
+    height: 500px;
+    margin: 5rem auto 0;
+    background-color: lightblue;
+    background-image: url('../../FrontendPractice/Abstract/images/heroimage.webp');
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: padding-box;
+}
