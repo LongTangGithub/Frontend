@@ -15,6 +15,9 @@
 body {
     -webkit-font-smoothing: antialiased;
     font-family: 'Poppins', sans-serif;
+}
+
+section {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -34,6 +37,7 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     gap: 1rem;
     /* position: relative; */
+    height: 500px
 }
 
 .item {
@@ -50,8 +54,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .item-1 {
-    position: relative;
-    top: 50px;
-    left: 50px;
-    z-index: -1;
+    position: sticky;
+    top: 0;
 }
