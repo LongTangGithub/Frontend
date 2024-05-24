@@ -33,7 +33,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .container {
     display: flex;
     gap: 1rem;
-    position: relative;
+    /* position: relative; */
 }
 
 .item {
@@ -50,11 +50,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .item-1 {
-    position: absolute;
-    top: -10px;
-    /* right: 0;
-    bottom: 0; */
-    left: -10px;
+    position: relative;
+    top: 50px;
+    left: 50px;
     z-index: -1;
 }
 
