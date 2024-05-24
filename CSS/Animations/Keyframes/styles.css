@@ -30,17 +30,17 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
-@keyframes slideInLeft {
+@keyframes rotate {
     from{
-        transform: translateX(-300px);
+        transform: rotate(0);
     }
 
     to {
-        transform: translateX(0);
+        transform: rotate(360deg);
     }
 }
 
-/* .title {
-    animation-name: ;
-
-} */
+.title {
+    animation: rotate 1s linear infinite;
+    transform-origin: top left;
+}
