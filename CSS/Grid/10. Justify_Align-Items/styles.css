@@ -29,17 +29,17 @@ p, h1, h2, h3, h4, h5, h6 {
 .container {
     width: 80%;
     margin-inline: auto;
-    /* border: 10px solid black; */
+    border: 10px solid black;
     margin-top: 10rem;
     
     display: grid;
-    grid-template-rows: repeat(2, 200px);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-        'html html css'
-        'js react react'
-    ;
-    gap: 1rem;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(4, 1fr);
+
+    /* justify-items: center;
+    align-items: center; */
+    place-items: start;
+
 }
 
 .item {  
@@ -48,18 +48,3 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 0.5rem;
 }
 
-.item-1{
-    grid-area: html;
-}
-
-.item-2{
-    grid-area: css;
-}
-
-.item-3{
-    grid-area: js;
-}
-
-.item-4{
-    grid-area: react;
-}
