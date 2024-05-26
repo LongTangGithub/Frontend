@@ -1,0 +1,31 @@
+.pricing {
+    margin-top: 5rem;
+}
+
+.pricing__title{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Selecting all the children elements under the parent except for the first one */
+/* .pricing__grid-container > * + * {
+    margin-top: 1rem;
+} */
+
+/* .pricing__box:not(:first-child){
+    margin-top: 1rem;
+} */
+
+.pricing__box {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    border-radius: 6px;
+    
+    margin-top: 1rem;
+}
+
+.pricing__box--0margin{
+    margin: 0;
+}
