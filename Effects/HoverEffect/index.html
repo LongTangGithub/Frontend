@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="card">
+        <img src="https://m.psecn.photoshelter.com/img-get2/I0000caz5KOc6WEY/fit=1000x750/CM01094.jpg" alt="">
+    </div>
+
+    <svg style="display: none;">
+        <defs>
+            <filter id="noise">
+                <feTurbulence
+                    baseFrequency="0.7,0.8"
+                    seed="0"
+                    type="fractalNoise"
+                    result="static"
+                >
+                <animate
+                    attributeName="seed"
+                    values="0;100"
+                    dur="800ms"
+                    repeatCount="1"
+                    begin=""
+                />
+                </feTurbulence>
+                <feDisplacementMap in=""SourceGraphic in2="static" scale="20"/>
+            </filter>
+        </defs>
+    </svg>
+</body>
+</html>
