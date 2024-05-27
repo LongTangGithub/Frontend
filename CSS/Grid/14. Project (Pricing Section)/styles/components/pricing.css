@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 .pricing {
     margin-top: 5rem;
 }
@@ -29,3 +31,45 @@
 .pricing__box--0margin{
     margin: 0;
 }
+
+
+.pricing__box__title {
+    font-size: 1.125rem;
+}
+
+.pricing__box__description1{
+    margin-bottom: 2.5rem;
+    font-size: 0.75rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.pricing__box__description2{
+    font-size: 0.75rem;
+    color: #888;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1rem;
+}
+
+.pricing__btn{
+    font-size: 0.75rem;
+}
+
+/* For Mobile */
+/* XS */
+@media (min-width: 475px){
+}
+
+/* sm */
+@media (min-width: 640px){}
+
+/* md */
+@media (min-width: 768px){}
+
+/* lg */
+@media (min-width: 1024px){}
+
+/* xl */
+@media (min-width: 1280px){}
+
+/* 2xl */
+@media (min-width: 1536px){}
