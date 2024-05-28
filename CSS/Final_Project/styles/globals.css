@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
+:root {
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Source Code Pro', monospace;
+
+    --clr-dark: #030712;
+    --clr-light: #e2e8f0;
+    --clr-text: #94a3b8;
+    --clr-muted: #64748b;
+    --clr-slate50: #f8fafc;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +20,9 @@
 
 body {
     -webkit-font-smoothing: antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-primary);
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
 }
 
 img, picture, video, canvas, svg {
@@ -30,4 +43,21 @@ button {
     background: none;
     color: inherit;
     cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.025em;
+}
+
+p{
+    color: var(--clr-text);
+}
+
+a{
+    color: var(--clr-slate50);
+}
+
+strong {
+    color: var(--clr-slate50);
+    font-weight: 900;
 }
