@@ -61,12 +61,26 @@ img {
 
 /* xl */
 @media (max-width: 1280px){
-
+    .leftside__nav img{
+        margin-right: 1.5rem;
+    }
+    .leftside__nav a {
+        margin-right: 1.5rem;
+        font-size: 1.05rem;
+    }
+    .rightside__nav a{
+        font-size: 1.05rem;
+        margin-right: 1rem;
+    }
+    
+    #login{
+        font-size: 0.8rem;
+    }
 }
 
 /* lg */
 @media (max-width: 1024px){
-
+    
 }
 
 /* sm */
