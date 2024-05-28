@@ -1,0 +1,61 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.header__logo{
+    width: var(--size-7xl);
+    height: var(--size-7xl);
+    object-fit: cover;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.header__bars{
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    color: var(--clr-slate50);
+}
+
+/* XS */
+/* @media (min-width: 475px){} */
+
+/* sm */
+/* @media (min-width: 640px){} */
+
+/* md */
+@media (min-width: 768px){
+    .header__bars{
+        display: none;
+    }
+
+    .header__menu{
+        display: flex;
+        align-items: center;
+    }
+
+    .header__social{
+        text-decoration: none;
+        font-size: var(--size-lg);
+        color: var(--clr-slate50);
+        padding: 0.5rem;
+        border-radius: 6px;
+        transition: background-color 0.3s;
+        
+        line-height: 0;                /* Making perfect squares */
+    }
+    .header__social:hover{
+        background-color: var(--clr-slate800);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px){}
+
+/* xl */
+@media (min-width: 1280px){}
+
+/* 2xl */
+@media (min-width: 1536px){}
