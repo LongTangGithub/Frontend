@@ -8,7 +8,7 @@
     --clr-dark: #030712;
     --clr-light: #e2e8f0;
     --clr-text: #94a3b8;
-    --clr-muted: #64748b;
+    --clr-muted: #6b7c94;
     --clr-slate50: #f8fafc;
     --clr-slate100: #f1f6f9;
 }
@@ -61,4 +61,13 @@ a{
 strong {
     color: var(--clr-slate50);
     font-weight: 900;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: solid var(--clr-light)
+}
+
+.muted{
+    color: var(--clr-muted)
 }

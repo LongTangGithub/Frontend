@@ -20,6 +20,10 @@
     background-color: var(--clr-slate100);
 }
 
+.btn:focus-visible{
+    outline: solid var(--clr-text);
+}
+
 .section{
     margin-top: 5rem;
 }
