@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/components/mobile-nav.css">
     <link rel="stylesheet" href="./styles/utils.css">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <script src="./src/main.js" type="module"></script>
     <title>Final Project</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
             <img src="./public/logo.webp" alt="Girl holding a cup of coffee" width="720" height="972" class="header__logo"/>
             <span class="header__title">Slaying The Dragon</span>
         </div>
-        <button class="header__bars" aria-label="menu-button">
+        <button id="bars-btn" class="header__bars" aria-label="menu-button">
             <svg 
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg" 
@@ -68,8 +69,8 @@
         </nav>
     </header>
     <!-- Mobile Nav -->
-    <div class="mobile-nav">
-        <button class="mobile-nav__close-btn">Close</button>
+    <div class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav__close-btn" id="close-btn">Close</button>
         <img src="./public/logo.webp" alt="Girl holding a cup of coffee" width="720" height="972" class="mobile-nav__logo"/>
         <div class="mobile-nav__social-container">
             <a 
