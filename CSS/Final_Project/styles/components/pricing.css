@@ -1,0 +1,67 @@
+.pricing__box {
+    background-color: var(--clr-bg);
+    padding: 2rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    box-shadow: var(--shadow-xl);
+}
+
+/* Preventing Margin Collapsing --> BEM Naming Convention on the first box */
+.pricing__box-0margin{
+    margin: 0;
+}
+
+.pricing__title{
+    font-size: var(--size-lg);
+}
+
+.pricing__description1 {
+    font-family: var(--font-secondary);
+    font-size: var(--size-xs);
+    color: var(--clr-light);
+    margin-bottom: 2.5rem;
+}
+
+.pricing__description2 {
+    font-family: var(--font-secondary);
+    font-size: var(--size-xs);
+    color: var(--clr-text);
+    margin-bottom: 1rem;
+}
+
+.pricing__btn {
+    font-size: var((--size-xs));
+}
+
+/* xs */
+@media (min-width: 475px){
+    .pricing__title{
+        font-size: var(--size-xl);
+    }
+    .pricing__description1 {
+        font-size: var(--size-sm);        
+    }
+    .pricing__description2{
+        font-size: var(--size-sm);   
+    }
+    .pricing__btn {
+        font-size: var(--size-sm);
+    }
+}
+
+/* sm */
+@media (min-width: 640px){
+
+}
+
+/* md */
+@media (min-width: 768px){}
+
+/* lg */
+@media (min-width: 1024px){}
+
+/* xl */
+@media (min-width: 1280px){}
+
+/* 2xl */
+@media (min-width: 1536px){}
