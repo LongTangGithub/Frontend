@@ -12,7 +12,10 @@
 </head>
 <body>
     <header class="header container">
-        <img src="./public/logo.webp" alt="Girl holding a cup of coffee" width="720" height="972" class="header__logo"/>
+        <div class="header__title-container">
+            <img src="./public/logo.webp" alt="Girl holding a cup of coffee" width="720" height="972" class="header__logo"/>
+            <span class="header__title">Slaying The Dragon</span>
+        </div>
         <button class="header__bars" aria-label="menu-button">
             <svg 
             aria-hidden="true"
@@ -28,30 +31,32 @@
         </button>
 
         <nav class="header__menu">
-            <a 
-            title="github"
-            aria-label="github link"
-            href="https://github.com" 
-            target="_blank" 
-            rel="noreferrer noopener" 
-            class="header__social"
-            ><i aria-hidden="true" class="lni lni-github-original"></i></a>
-            <a 
-            title="discord"
-            aria-label="discord link"
-            href="https://discord.com" 
-            target="_blank" 
-            rel="noreferrer noopener" 
-            class="header__social"
-            ><i aria-hidden="true" class="lni lni-discord-alt"></i></a>
-            <a 
-            title="youtube"
-            aria-label="youtube link"
-            href="https://youtube.com" 
-            target="_blank" 
-            rel="noreferrer noopener" 
-            class="header__social"
-            ><i aria-hidden="true" class="lni lni-youtube"></i></a>
+            <div class="header__social-container">
+                <a 
+                title="github"
+                aria-label="github link"
+                href="https://github.com" 
+                target="_blank" 
+                rel="noreferrer noopener" 
+                class="header__social"
+                ><i aria-hidden="true" class="lni lni-github-original"></i></a>
+                <a 
+                title="discord"
+                aria-label="discord link"
+                href="https://discord.com" 
+                target="_blank" 
+                rel="noreferrer noopener" 
+                class="header__social"
+                ><i aria-hidden="true" class="lni lni-discord-alt"></i></a>
+                <a 
+                title="youtube"
+                aria-label="youtube link"
+                href="https://youtube.com" 
+                target="_blank" 
+                rel="noreferrer noopener" 
+                class="header__social"
+                ><i aria-hidden="true" class="lni lni-youtube"></i></a>
+            </div>
             <div class="header__separator"></div>
             <a href="#" class="header__sign-in-btn">Sign in</a>
             <a href="#" class="btn header__enter-app-btn">Enter App

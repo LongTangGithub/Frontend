@@ -19,6 +19,15 @@
     color: var(--clr-slate50);
 }
 
+/* The right side nav wont's shows besides the header__bars in smaller viewport */
+.header__menu {
+    display: none;
+}
+
+.header__title{
+    display: none;
+}
+
 /* XS */
 /* @media (min-width: 475px){} */
 
@@ -34,6 +43,12 @@
     .header__menu{
         display: flex;
         align-items: center;
+        gap: 2rem;
+    }
+
+    .header__social-container {
+        display: flex;
+        gap: 1rem;
     }
 
     .header__social{
@@ -71,19 +86,57 @@
         font-size: var(--size-xs);
     }
 
+    /* Instead of using flexbox and set the display: flex !important, we set the display for the svg to inline, 
+        the btn utility class has a display of inline block not inline. We can use the vertical align property
+        to align the svg onto the middle
+    */
     .header__enter-app-btn__arrow{
         width: 1em;
+
         display: inline;
         vertical-align: middle;
         margin-left: 0.25rem;
     }
+
+
 }
 
 /* lg */
-@media (min-width: 1024px){}
+@media (min-width: 1024px){
+    .header__title-container{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .header__title{
+        display: block;
+        font-family: var(--font-secondary);
+        font-size: var(--size-xl);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+}
 
 /* xl */
-@media (min-width: 1280px){}
+@media (min-width: 1280px){
+    .header__logo{
+        width: var(--size-8xl);
+        height: var(--size-8xl);
+    }
+    .header__title{
+        font-size: var(--size-2xl);
+    }
+    .header__social{
+        font-size: var(--size-xl);
+    }
+    .header__sign-in-btn{
+        font-size: var(--size-sm);
+    }
+    .header__enter-app-btn{
+        font-size: var(--size-sm);
+    }
+}
 
 /* 2xl */
 @media (min-width: 1536px){}
