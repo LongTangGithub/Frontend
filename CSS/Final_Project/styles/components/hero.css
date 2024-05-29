@@ -1,0 +1,37 @@
+.hero{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Adding gaps without using gaps */
+.hero > * + * {
+    margin-top: 1rem;
+}
+
+.hero__img{
+    width: var(--size-9xl);
+    height: var(--size-9xl);
+    object-fit: contain;
+    margin-inline: auto;
+
+}
+.hero__title{
+    font-size: var(--size-3xl);
+    font-weight: 900;
+    line-height: 1;
+}
+
+.hero__description1{
+    font-family: var(--font-secondary);
+    font-size: var(--size-sm);
+    color: var(--clr-muted);
+}
+
+.hero__description2{
+    font-size: var(--size-sm);
+    color: var(--clr-muted);
+}
+
+.hero__btn{
+    font-size: var(--size-sm);
+}
