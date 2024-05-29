@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/modern-normalize.css">
     <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/components/header.css">
+    <link rel="stylesheet" href="./styles/components/mobile-nav.css">
     <link rel="stylesheet" href="./styles/utils.css">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <title>Final Project</title>
@@ -66,6 +67,44 @@
             </a>
         </nav>
     </header>
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <button class="mobile-nav__close-btn">Close</button>
+        <img src="./public/logo.webp" alt="Girl holding a cup of coffee" width="720" height="972" class="mobile-nav__logo"/>
+        <div class="mobile-nav__social-container">
+            <a 
+            title="github"
+            aria-label="github link"
+            href="https://github.com" 
+            target="_blank" 
+            rel="noreferrer noopener" 
+            class="mobile-nav__social"
+            ><i aria-hidden="true" class="lni lni-github-original"></i></a>
+            <a 
+            title="discord"
+            aria-label="discord link"
+            href="https://discord.com" 
+            target="_blank" 
+            rel="noreferrer noopener" 
+            class="mobile-nav__social"
+            ><i aria-hidden="true" class="lni lni-discord-alt"></i></a>
+            <a 
+            title="youtube"
+            aria-label="youtube link"
+            href="https://youtube.com" 
+            target="_blank" 
+            rel="noreferrer noopener" 
+            class="mobile-nav__social"
+            ><i aria-hidden="true" class="lni lni-youtube"></i></a>
+        </div>
+        <div class="mobile-nav__separator"></div>
+        <a href="#" class="mobile-nav__sign-in-btn">Sign in</a>
+        <a href="#" class="btn mobile-nav__enter-app-btn">Enter App
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="mobile-nav__enter-app-btn__arrow">
+                <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>  
+        </a>
+    </div>
     <main>
         <section></section>
         <section></section>
@@ -76,5 +115,6 @@
         <section></section>
     </main>
     <footer></footer>
+    <!-- <div style="height: 500vh"></div> -->
 </body>
 </html>
