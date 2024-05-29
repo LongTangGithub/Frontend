@@ -8,12 +8,15 @@
 
     /* Colors */
     --clr-dark: #030712;
-    --clr-light: #e2e8f0;
-    --clr-text: #94a3b8;
+    
+    --clr-slate50: #f8fafc;       /* Slate 50 */
+    --clr-slate100: #f1f6f9;     /* Slate 100 */
+    --clr-light: #e2e8f0;       /* Slate 200 */
+    --clr-slate300: #cbd5e1;   /* Slate 300 */
+    --clr-text: #94a3b8;      /* Slate 400 */
+    --clr-slate800: #1e293b; /* Slate 800 */
+
     --clr-muted: #6b7c94;
-    --clr-slate50: #f8fafc;
-    --clr-slate100: #f1f6f9;
-    --clr-slate800: #1e293b;
 
     /* Sizes */
     --size-xxs: 0.5rem;
