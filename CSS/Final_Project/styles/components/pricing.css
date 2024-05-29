@@ -103,6 +103,3 @@
         font-size: var(--size-base);
     }
 }
-
-/* 2xl */
-@media (min-width: 1536px){}
