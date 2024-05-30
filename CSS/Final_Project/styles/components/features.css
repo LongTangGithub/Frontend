@@ -43,3 +43,68 @@
     font-family: var(--font-secondary);
     font-size: var(--size-xs);
 }
+
+/* xs */
+@media (min-width: 475px){
+    .features__title {
+        font-size: var(--size-3xl);
+    }
+    .features__description {
+        font-size: var(--size-base);
+    }
+    .features__box-icon {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
+    .features__bpx-title {
+        font-size: var(--size-base);
+    }
+    .features__box-description {
+        font-size: var(--size-sm);
+    }
+}
+
+/* sm */
+@media (min-width: 640px){}
+
+/* md */
+@media (min-width: 768px){
+    .features__description {
+        max-width: 60ch;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px){
+    .features__box {
+        margin: 0;
+    }
+    .features__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        gap: 1rem;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px){
+    .features__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 6rem;
+    }
+    .features__content {
+        min-width: 30rem;
+    }
+    .features__title {
+        font-size: var(--size-4xl);
+    }
+    .features__Description {
+        font-size: var(--size-lg);
+        margin-top: 2rem;
+    }
+
+}
+
+/* 2xl */
+@media (min-width: 1536px){}
