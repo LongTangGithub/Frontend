@@ -49,19 +49,38 @@
 /* For Mobile */
 /* xs */
 @media (min-width: 475px){
+    .cta__img {
+        width: var(--size-10xl);
+        height: var(--size-10xl);
+    }
+    .cta__title {
+        font-size: var(--size-3xl);
+    }
+    .cta__description {
+        font-size: var(--size-base);
+    }
+    .cta__btn {
+        font-size: var(--size-base);
+    }
 }
 
-/* sm */
-@media (min-width: 640px){}
-
-/* md */
-@media (min-width: 768px){}
-
-/* lg */
-@media (min-width: 1024px){}
-
 /* xl */
-@media (min-width: 1280px){}
+@media (min-width: 1280px){
+    .cta > * + * {
+        margin-top: 1rem;
+    }
+    .cta__img {
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .cta__title {
+        font-size: var(--size-4xl);
+    }
+    .cta__description {
+        font-size: var(--size-lg);
+    }
+    .cta__btn {
+        font-size: var(--size-lg);
+    }
 
-/* 2xl */
-@media (min-width: 1536px){}
+}
