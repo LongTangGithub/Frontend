@@ -4,15 +4,17 @@
 	padding-inline: 0.5rem;
 }
 
+.info__title {
+    font-family: var(--font-secondary);
+    color: var(--clr-nutmeg);
+    margin: 2rem 0;
+}
 
 /* For Mobile */
 /* xs */
 @media (min-width: 475px){
     .container {
         max-width: 475px;
-    }
-    .title{
-        font-size: var(--size-sm);
     }
 }
 
@@ -35,12 +37,7 @@
     .container {
         max-width: 1024px;
     }
-    .section{
-        margin-top: 5rem;
-    }
-    .title{
-        font-size: var(--size-base);
-    }
+
 }
 
 /* xl */

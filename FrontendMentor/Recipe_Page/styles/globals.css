@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+
+:root {
+    /* Fonts */
+    --font-primary: 'Outfit', sans-serif;
+    --font-secondary: 'Young serif', serif;
+
+    /* Primary Colors */
+    --clr-nutmeg: hsl(14, 45%, 36%);
+    --clr-rasberry: hsl(332, 51%, 32%);
+
+    /* Neutral Colors */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-rosewhite: hsl(330, 100%, 98%);
+    --clr-eggshell: hsl(30, 54%, 90%);
+    --clr-lightGrey: hsl(30, 18%, 87%);
+    --clr-wengeBrown: hsl(30, 10%, 34%);
+    --clr-darkCharcoal: hsl(24, 5%, 18%);
+
+	/* Sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;    
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--clr-eggshell);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.025em;
+}
