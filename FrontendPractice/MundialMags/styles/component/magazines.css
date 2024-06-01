@@ -1,13 +1,80 @@
 /* CSS Scroll Snapping Functionality Starts Here  */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem ;
+    border: 2px solid black;
+}
 
-.logo__container {
-    border: 3px solid black;
-    width: 20%;
-    padding: 2rem; 
-} 
+.header__logo {
+    width: 15rem;
+    height: 5rem;
+    object-fit: fill;
+}
 
-.logo__img {
-    width: var(13rem);
-    height: var(13rem);
-    object-fit: contain;
+.email{
+    text-decoration: none;
+    color: var(--text-clr);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.15rem;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+.description__container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    padding: 1rem ;
+    border: 2px solid red;
+}
+.description {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.published {
+    color: var(--text-clr);
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.author {
+    color: var(--text-clr)
+}
+
+.privacy-policy {
+    color: var(--text-clr);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.issue__container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+.issues {
+    list-style: none;
+}
+
+.issues li {
+    padding: 0.2rem 0;
+}
+
+.issues__num {
+    color: var(--text-clr);
+    text-decoration: none;
+    font-weight: 500;
+
 }
