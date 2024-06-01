@@ -23,7 +23,6 @@
 
 .recipe__info {
     max-width: 95%;
-    border: 2px solid black;
     margin-inline: auto;
     padding: 0 0.5rem;
 }
@@ -32,6 +31,7 @@
     font-family: var(--font-secondary);
     color: var(--clr-darkCharcoal);
     padding-bottom: 0.7rem;
+    font-weight: 400;
 }
 
 .recipe__description {
