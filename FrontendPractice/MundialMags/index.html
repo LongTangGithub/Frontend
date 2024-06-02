@@ -6,39 +6,89 @@
     <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/utils.css">
     <link rel="stylesheet" href="./styles/component/magazines.css">
+    <script src="./src/backgroundChange.js" type="module"></script>
     <title>Mundial Magazines</title>
 </head>
 <body>
+    <header class="header">
+        <div class="header__title-container">
+            <img src="./images/Mundial-Logo.webp" alt="Mundial Logo" class="header__logo">
+        </div>
+        <address class="email__container">
+            <a href="mailto:enquiries@mundialmag.com" class="email">enquiries@mundialmag.com</a>
+        </address>
+    </header>
     <main>
-        <header class="header">
-            <div class="header__title-container">
-                <img src="./images/Mundial-Logo.webp" alt="Mundial Logo" class="header__logo">
+        <div class="wrapper">
+            <div id="issue-02" class="issue issue-02">
+                <img class="issue__img" src="./images/Issue-02.webp" alt="Baggio">
+                <div class="issue__text">
+                    <p class="issue__title">Issue #2</p>
+                    <p class="issue__link">Buy here</p>
+                </div>
             </div>
-            <address class="email__container">
-                <a href="mailto:enquiries@mundialmag.com" class="email">enquiries@mundialmag.com</a>
-            </address>
-        </header>
-        <main>
-            <div class="description__container">
-                <p class="description">
-                    MUNDIAL exists to remind you why you love football, and why you fell in love with it in the first place. Every page is a celebration of football culture told in a style that doesn't talk down to or exclude you, this is an inclusive place for football fans to escape to.
-                </p>
-                <p class="published">&copy; 2024 <a href="#" class="author" >Published by Long Tang</a></p>
-                <a class="privacy-policy" href="https://mundialmag.com/pages/privacy-policy">Privacy Policy</a>
+            <div id="issue-09" class="issue issue-09">
+                <img class="issue__img" src="./images/Issue-09.webp" alt="Cantona">
+                <div class="issue__text">
+                    <p class="issue__title">Issue #9</p>
+                    <p class="issue__link">Buy here</p>
+                </div>
+            </div>
+            <div id="issue-10" class="issue issue-10">
+                <img class="issue__img" src="./images/Issue-10.webp" alt="Maradona">
+                <div class="issue__text">
+                    <p class="issue__title">Issue #10</p>
+                    <p class="issue__link">Buy here</p>
+                </div>
+            </div>
+            <div id="issue-16" class="issue issue-16">
+                <img class="issue__img" src="./images/Issue-16.png" alt="English">
+                <div class="issue__text">
+                    <p class="issue__title">Issue #16</p>
+                    <p class="issue__link">Buy here</p>
+                </div>
+            </div>
+            <div id="issue-22" class="issue issue-22">
+                <img class="issue__img" src="./images/Issue-22.webp" alt="Maldini">
+                <div class="issue__text">
+                    <p class="issue__title">Issue #22</p>
+                    <p class="issue__link">Buy here</p>
+                </div>
+            </div>
+            <div id="issue-28" class="issue issue-28">
+                <img class="issue__img" src="./images/Issue-28.webp" alt="Brazil">
+                <div class="issue__text">
+                    <p class="issue__title">Issue #28</p>
+                    <p class="issue__link">Buy here</p>
+                </div>
+            </div>
+            <div id="issue-29" class="issue issue-29">
+                <img class="issue__img" src="./images/Issue-29.webp" alt="Gullit">
+                <div class="issue__text">
+                    <p class="issue__title">Issue #29</p>
+                    <p class="issue__link">Buy here</p>
+                </div>
+            </div>
+        </div>
+        <div class="description__container">
+            <p class="description">
+                MUNDIAL exists to remind you why you love football, and why you fell in love with it in the first place. Every page is a celebration of football culture told in a style that doesn't talk down to or exclude you, this is an inclusive place for football fans to escape to.
+            </p>
+            <p class="published">&copy; 2024 <a href="#" class="author" >Published by Long Tang</a></p>
+            <a class="privacy-policy" href="https://mundialmag.com/pages/privacy-policy">Privacy Policy</a>
 
-            </div>
-            <div class="issue__container">
-                <ul class="issues">
-                    <li><a class="issues__num" href="#">Issue #29</a></li>
-                    <li><a class="issues__num" href="#">Issue #28</a></li>
-                    <li><a class="issues__num" href="#">Issue #22</a></li>
-                    <li><a class="issues__num" href="#">Issue #16</a></li>
-                    <li><a class="issues__num" href="#">Issue #10</a></li>
-                    <li><a class="issues__num" href="#">Issue #09</a></li>
-                    <li><a class="issues__num" href="#">Issue #02</a></li>
-                </ul>
-            </div>
-        </main>
+        </div>
+        <div class="issue__container">
+            <ul class="issues">
+                <li><a class="issues__num" href="#issue-29">Issue #29</a></li>
+                <li><a class="issues__num" href="#issue-28">Issue #28</a></li>
+                <li><a class="issues__num" href="#issue-22">Issue #22</a></li>
+                <li><a class="issues__num" href="#issue-16">Issue #16</a></li>
+                <li><a class="issues__num" href="#issue-10">Issue #10</a></li>
+                <li><a class="issues__num" href="#issue-09">Issue #09</a></li>
+                <li><a class="issues__num" href="#issue-02">Issue #02</a></li>
+            </ul>
+        </div>
     </main>
 </body>
 </html>
