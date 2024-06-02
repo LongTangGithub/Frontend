@@ -26,8 +26,14 @@
   --issue-10: #dac868;
   --issue-16: #dcc8a8;
   --issue-22: #417477;
-  --isue-28: #deda38;
-  --issue-29: #FDF5EA;
+  --issue-28: #DEDA38;
+  --issue-29: #DAD6CA;
+
+  /* Misc */
+  --fixed-m-x: 0.9375rem;
+  --fixed-m-y: 1.25rem;
+  --logo-h: 1.875rem;
+  --logo-h-md: 1rem;
 }
 
 *,
@@ -44,12 +50,37 @@
 
 html {
 	scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
+
+/* @media (width < 62.5rem) {
+  html {
+    scroll-snap-type: none;
+  }
+} */
+
 
 body {
     -webkit-font-smoothing: antialiased;
     font-family: 'Poppins', sans-serif;
+    transition: background-color 0.2s ease-out;
+
 }
+/* 
+@keyframes bg-change {
+  0%, 8.3333333333% {
+    background-color: #DAD6CA;
+  }
+  16.6666666667%, 25% {
+    background-color: #DEDA38;
+  }
+} */
+
+/* @media (width < 62.5rem) {
+  body {
+    animation-name: bg-change-margin;
+  }
+} */
 
 button {
 	border: none;
