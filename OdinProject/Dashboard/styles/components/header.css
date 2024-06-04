@@ -9,7 +9,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 50%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .search__icon {
@@ -63,7 +63,7 @@
 }
 
 .share {
-    border: 5px solid pink;
+    /* border: 5px solid pink; */
     height: 50%;
     display: flex;
     align-items: center;
