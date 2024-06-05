@@ -53,12 +53,6 @@
 }
 
 
-.main__content {
-    width: 80%;
-    border: 3px solid orangered;
-    min-height: 100dvh;
-}
-
 
 /* xs */
 @media (min-width: 475px){
