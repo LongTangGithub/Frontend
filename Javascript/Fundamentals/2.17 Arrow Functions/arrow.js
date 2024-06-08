@@ -38,6 +38,16 @@ let sum2 = (c, d) => {
 
 console.log(sum2( 3, 4));     // 7
 
+//! Returning objects directly using Arrow Functions
+// ? Note you notice the `()` before the curly braces, thats because we're dealing with functions
+const getEmail = email => ({
+    email: email,
+    emailAddress: `www.${email.toLowerCase()}.com`
+}
+)
+const email = getEmail("LongTang")
+console.log(JSON.stringify(email, null, 1));
+
 
 //! Task
 let ask = (question, yes, no) => confirm(question) ? yes() : no();
