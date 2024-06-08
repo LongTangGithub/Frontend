@@ -3,7 +3,7 @@
  * ? A shorter version of function expression, the function accepts arguments, evaluates the expression on the right and return its result
  * ? let function = (arg1, arg2, ... argN) => expression 
  * 
- * todo: if the only one argument, parentheses can be omitted
+ * todo: if there's only one argument, parentheses can be omitted
  * todo: if there are no arguments, parenthesis must be present but can be empty
  */
 
