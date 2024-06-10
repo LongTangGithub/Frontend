@@ -1,3 +1,14 @@
+const players = [
+    'Alex',
+    'Jamilia',
+    'Joe',
+    "Aisha",
+    'Bob'
+];
+
+
+
+
 /**
  * ! While Loop
  * ? Loops until a set of conditions is false
