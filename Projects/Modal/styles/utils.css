@@ -5,6 +5,19 @@ button {
 	cursor: pointer;
 }
 
+.btn {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #6d28d9;
+    color: #FFF;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #5E0BCB;
+}
+
 .section{
     margin-top: 5rem;
 }
