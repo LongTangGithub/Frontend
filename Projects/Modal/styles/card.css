@@ -1,6 +1,6 @@
 .main__container {
     border: 2px solid black;
-    height: 100vh;
+    height: auto;
 }
 .title__container {
     text-align: center;
@@ -11,7 +11,7 @@
 .title{
     font-size: 2.5rem;
     font-weight: 900;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
 }
 
 .sub__title {
@@ -19,6 +19,69 @@
     color: #64748b;
 }
 
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto-fit, 1fr));
+    grid-template-rows: repeat(2, auto);      /* ! The auto allows the rows to adapt to the height of their content */
+    grid-template-areas: 
+        "item1 item2 item3"
+        "item4 item5 item6"
+    ;
+    gap: 2rem;
+}
+
+.pc{
+    border: 2px solid black;
+}
+
+.player1 {
+    grid-area: item1;
+}
+
+.player2 {
+    grid-area: item2;
+}
+
+.player3 {
+    grid-area: item3;
+}
+
+.player4 {
+    grid-area: item4;
+}
+
+.player5 {
+    grid-area: item5;
+}
+
+.player6 {
+    grid-area: item6;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+}
+
+.background__box {
+    background-color: #F6F6F9;
+    height: 384px;
+    margin-bottom: 1rem;
+}
+
+.pc__player-title {
+    font-weight: 600;
+}
+
+.pc__player-subtitle{
+    font-weight: 400;
+    color: #475569;
+}
+
+.reviews__container{
+    display: flex;
+    flex-direction: row;
+}
 
 
 @media (min-width: 475px){
