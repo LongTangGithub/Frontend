@@ -21,7 +21,7 @@
 
 .grid__container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(auto-fit, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-template-rows: repeat(2, auto);      /* ! The auto allows the rows to adapt to the height of their content */
     grid-template-areas: 
         "item1 item2 item3"
@@ -64,9 +64,43 @@
 }
 
 .background__box {
+    display: flex;
+    flex-direction: column-reverse;
     background-color: #F6F6F9;
     height: 384px;
     margin-bottom: 1rem;
+    cursor: pointer;
+    overflow: hidden;  /* ! Hide the button initially */
+    position: relative;
+}
+
+.background__box:hover .quick__shop {
+    /* display: inline-block;
+    transition: all 0.6s; */
+    transform: translateY(0);  /* ! Move the button into view */
+}
+
+.pc__image {
+    width: 100%;
+    height: auto;
+}
+
+.quick__shop {
+    display: inline-block;
+    transform: translateY(100%);   /* ! Move the button out of view */
+    text-decoration: none;
+    color: #e0e0e0 ;
+    background-color: #616161;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    transition: transform 0.6s ease;   /* ! Smooth transition for transform */
+}
+
+.quick__shop:hover{
+    background-color: #8A00FC;
+    color: white;
+    transition: all 0.7s;
 }
 
 .pc__player-title {
@@ -106,13 +140,23 @@ hr.solid {
 .pc__specs-title {
     font-size: 0.83rem;
     font-weight: 600;
-    line-height: 0.9;
+    line-height: 1.25;
 }
 
-.pc__specs-description {
+.pc__specs-description{
+    margin-bottom: 0.4rem;
+}
+
+.pc__specs-description span {
+    display: block;
     font-size: 0.83rem;
     color: #475569;
-    line-height: 0.4;
+    line-height: 1.25;
+}
+
+.pc__price {
+    font-size: 0.9rem;
+    letter-spacing: 0.04rem;
 }
 
 @media (min-width: 475px){

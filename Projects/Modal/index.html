@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/utils.css" />
     <link rel="stylesheet" href="./styles/card.css" />
+    <link rel="stylesheet" href="./styles/modern-normalize.css">
     <title>NZXT Modals</title>
   </head>
   <body>
@@ -18,7 +19,10 @@
 
         <div class="grid__container">
           <div class="pc player1">
-            <div class="background__box"></div>
+            <div class="background__box">
+                <img class="pc__image" src="./public/Player1.webp" alt="Player One PC">
+                <a aria-hidden="true" href="#" class="quick__shop">Quick Shop</a>
+            </div>
             <div class="information">
               <h3 class="pc__player-title">Player: One</h3>
               <h5 class="pc__player-subtitle">
@@ -97,20 +101,24 @@
                 </svg>
                 <p class="reviews__num">(345)</p>
               </div>
-              <hr class="solid">
+              <hr class="solid" />
               <div class="pc__specs">
                 <p class="pc__specs-title">Key Specs</p>
                 <p class="pc__specs-description">
-                    Windows 11 Home <br>
-                    Intel Core i5-12400F <br>
-                    NVIDIA GeForce RTX 3050 <br>
+                  <span>Windows 11 Home </span>
+                  <span>Intel Core i5-12400F</span>
+                  <span>NVIDIA GeForce RTX 3050</span>
                 </p>
               </div>
+              <hr class="solid" />
+              <p class="pc__price">$799.00</p>
+              <a aria-hidden="true" href="#" class="btn">Shop</a>
             </div>
-            <!-- <a aria-hidden="true" href="#" class="btn">Shop</a>     -->
           </div>
           <div class="pc player2">
-            <div class="background__box"></div>
+            <div class="background__box">
+                <a aria-hidden="true" href="#" class="quick__shop">Quick Shop</a>
+            </div>
             <div class="information">
               <h3 class="pc__player-title">Player: Two</h3>
               <h5 class="pc__player-subtitle">H6 Flow RTX 4070 Gaming PC</h5>
@@ -187,19 +195,24 @@
                 </svg>
                 <p class="reviews__num">(166)</p>
               </div>
-              <hr class="solid">
+              <hr class="solid" />
               <div class="pc__specs">
                 <p class="pc__specs-title">Key Specs</p>
                 <p class="pc__specs-description">
-                    Windows 11 Home
-                    Intel Core i5-12400F
-                    NVIDIA GeForce RTX 3050
+                  <span>Windows 11 Home </span>
+                  <span>Intel Core i5-12400F</span>
+                  <span>NVIDIA GeForce RTX 3050</span>
                 </p>
               </div>
+              <hr class="solid" />
+              <p class="pc__price">$1599.00</p>
+              <a aria-hidden="true" href="#" class="btn">Shop</a>
             </div>
           </div>
           <div class="pc player3">
-            <div class="background__box"></div>
+            <div class="background__box">
+                <a aria-hidden="true" href="#" class="quick__shop">Quick Shop</a>
+            </div>
             <div class="information">
               <h3 class="pc__player-title">Player: Three</h3>
               <h5 class="pc__player-subtitle">
@@ -278,15 +291,24 @@
                 </svg>
                 <p class="reviews__num">(95)</p>
               </div>
-              <hr class="solid">
-              Eu irure non ad velit magna aute sit cupidatat duis occaecat enim
-              anim. Culpa minim ut culpa tempor aute fugiat eiusmod enim magna
-              aliqua. Eu incididunt elit fugiat minim officia excepteur dolore
-              pariatur culpa
+              <hr class="solid" />
+              <div class="pc__specs">
+                <p class="pc__specs-title">Key Specs</p>
+                <p class="pc__specs-description">
+                  <span>Windows 11 Home </span>
+                  <span>Intel Core i5-12400F</span>
+                  <span>NVIDIA GeForce RTX 3050</span>
+                </p>
+              </div>
+              <hr class="solid" />
+              <p class="pc__price">$2,299.00</p>
+              <a aria-hidden="true" href="#" class="btn">Shop</a>
             </div>
           </div>
           <div class="pc player4">
-            <div class="background__box"></div>
+            <div class="background__box">
+                <a aria-hidden="true" href="#" class="quick__shop">Quick Shop</a>
+            </div>
             <div class="information">
               <h3 class="pc__player-title">Player: One Prime</h3>
               <h5 class="pc__player-subtitle">
@@ -364,20 +386,26 @@
                   />
                 </svg>
                 <p class="reviews__num">(263)</p>
-                <hr class="solid"/>
+                <hr class="solid" />
               </div>
-              <hr class="solid">
-              Et ipsum laborum aute excepteur deserunt ipsum minim minim
-              adipisicing mollit ipsum. Ullamco excepteur velit ipsum anim
-              exercitation velit ipsum veniam ullamco magna eu nulla culpa do.
-              Duis ad elit veniam et ad in adipisicing reprehenderit do sit
-              ullamco. Consectetur elit eiusmod nulla ipsum sunt qui
-              reprehenderit. Aute non eu dolor dolore qui. Voluptate mollit
-              consequat sit deserunt laboris aute et.
+              <hr class="solid" />
+              <div class="pc__specs">
+                <p class="pc__specs-title">Key Specs</p>
+                <p class="pc__specs-description">
+                  <span>Windows 11 Home </span>
+                  <span>Intel Core i5-12400F</span>
+                  <span>NVIDIA GeForce RTX 3050</span>
+                </p>
+              </div>
+              <hr class="solid" />
+              <p class="pc__price">$1,249.00</p>
+              <a aria-hidden="true" href="#" class="btn">Shop</a>
             </div>
           </div>
           <div class="pc player5">
-            <div class="background__box"></div>
+            <div class="background__box">
+                <a aria-hidden="true" href="#" class="quick__shop">Quick Shop</a>
+            </div>
             <div class="information">
               <h3 class="pc__player-title">Player: Two Prime</h3>
               <h5 class="pc__player-subtitle">
@@ -455,18 +483,26 @@
                   />
                 </svg>
                 <p class="reviews__num">(179)</p>
-                <hr class="solid"/>
+                <hr class="solid" />
               </div>
-              <hr class="solid">
-              In magna cupidatat adipisicing pariatur ad reprehenderit velit
-              cillum. Quis eu officia esse amet nostrud consequat eu anim quis
-              qui deserunt ad fugiat. Ea mollit sunt aliqua pariatur aliquip
-              excepteur occaecat cupidatat reprehenderit nulla cupidatat amet
-              ad.
+              <hr class="solid" />
+              <div class="pc__specs">
+                <p class="pc__specs-title">Key Specs</p>
+                <p class="pc__specs-description">
+                  <span>Windows 11 Home </span>
+                  <span>Intel Core i5-12400F</span>
+                  <span>NVIDIA GeForce RTX 3050</span>
+                </p>
+              </div>
+              <hr class="solid" />
+              <p class="pc__price">$2,099.00</p>
+              <a aria-hidden="true" href="#" class="btn">Shop</a>
             </div>
           </div>
           <div class="pc player6">
-            <div class="background__box"></div>
+            <div class="background__box">
+                <a aria-hidden="true" href="#" class="quick__shop">Quick Shop</a>
+            </div>
             <div class="information">
               <h3 class="pc__player-title">Player: Three Prime</h3>
               <h5 class="pc__player-subtitle">H9 Elite RTX 4090 Gaming PC</h5>
@@ -553,14 +589,20 @@
                   />
                 </svg>
                 <p class="reviews__num">(8)</p>
-                <hr class="solid"/>
+                <hr class="solid" />
               </div>
-              <hr class="solid">
-              Adipisicing id dolore amet qui duis. Qui labore esse sint
-              excepteur sit non. Et commodo in veniam quis id veniam. Cillum
-              veniam nisi reprehenderit eu ex sunt dolore laborum magna quis
-              exercitation. Pariatur ad minim qui consectetur laborum dolor
-              cupidatat laboris sit ex in reprehenderit id tempor.
+              <hr class="solid" />
+              <div class="pc__specs">
+                <p class="pc__specs-title">Key Specs</p>
+                <p class="pc__specs-description">
+                  <span>Windows 11 Home </span>
+                  <span>Intel Core i5-12400F</span>
+                  <span>NVIDIA GeForce RTX 3050</span>
+                </p>
+              </div>
+              <hr class="solid" />
+              <p class="pc__price">$3,699.00</p>
+              <a aria-hidden="true" href="#" class="btn">Shop</a>
             </div>
           </div>
         </div>
