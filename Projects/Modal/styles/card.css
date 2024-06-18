@@ -1,10 +1,10 @@
 .main__container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: auto;
 }
 .title__container {
     text-align: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 2rem 0;
     padding: 2rem;
 }
@@ -31,7 +31,7 @@
 }
 
 .pc{
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .player1 {
@@ -66,6 +66,8 @@
 .background__box {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     background-color: #F6F6F9;
     height: 384px;
     margin-bottom: 1rem;
@@ -77,15 +79,24 @@
 .background__box:hover .quick__shop {
     /* display: inline-block;
     transition: all 0.6s; */
-    transform: translateY(0);  /* ! Move the button into view */
+    transform: translateY( 0%);  /* ! Move the button into view */
 }
 
+
 .pc__image {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.4s linear;
+}
+
+.background__box:hover .pc__image {
+    transform: scale(1.1);
 }
 
 .quick__shop {
+    position: absolute;
+    bottom: 0;                     /* ! Place the button at the bottom */
+    width: 100%;
     display: inline-block;
     transform: translateY(100%);   /* ! Move the button out of view */
     text-decoration: none;
