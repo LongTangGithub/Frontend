@@ -1,3 +1,7 @@
 body{
     background-color: #fff;
 }
+
+input::placeholder {
+    color: red;
+}
