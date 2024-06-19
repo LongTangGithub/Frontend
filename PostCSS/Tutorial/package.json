@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:css": "postcss src/input.css -o dist/stylec.css -w",
-    "build:css": "postcss src/input.css -o dist/stylec.css"
+    "watch:css": "postcss src/input.css -o dist/styles.css -w",
+    "build:css": "postcss src/input.css -o dist/styles.css"
   },
   "keywords": [],
   "author": "",
