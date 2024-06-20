@@ -5,3 +5,11 @@ body {
 h2 {
     color: white;
 }
+
+input::-moz-placeholder {
+    color: steelblue;
+}
+
+input::placeholder {
+    color: steelblue;
+}
