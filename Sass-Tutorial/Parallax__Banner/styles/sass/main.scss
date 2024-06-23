@@ -2,10 +2,10 @@ $parallax-height: 100vh;
 $center-margin: 0px auto;
 
 @mixin background-size($size){
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size;
 }
 
 @mixin parallax-background($file){
@@ -21,12 +21,13 @@ body {
   color: #2e3738;
 }
 
-// #landscape {
-// }
+#landscape {
+    @include parallax-background("https://content.codecademy.com/projects/sass/landscape.jpg");
+}
 
-// #monkeys {
-
-// }
+#monkeys {
+    @include parallax-background("https://content.codecademy.com/projects/sass/monkeys.jpg");
+}
 
 #landscape,
 #monkeys {
