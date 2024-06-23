@@ -13,11 +13,19 @@ $center-margin: 0px auto;
 // }
 
 // #monkeys {
+
 // }
 
 #landscape,
 #monkeys {
-
+    // Logic for Parallax Effect
+    width: 100%;
+    height: $parallax-height;
+    perspective: 1px;
+    transform: translateZ(-1px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    
 	h1{
 		text-transform: uppercase;
 	  	font-family: 'Bitter', serif;
@@ -32,7 +40,7 @@ $center-margin: 0px auto;
 p {
 	width: 70%;
 	padding: 5%;
-	margin: 0px auto;
+	margin: $center-margin;
 	text-align: center;
 	font-size: 20px;
 	font-weight: 200;
