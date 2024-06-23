@@ -1,3 +1,13 @@
+$parallax-height: 100vh;
+$center-margin: 0px auto;
+
+@mixin background-size($size){
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 html,
 body {
   margin: 0;
@@ -5,9 +15,6 @@ body {
   font-family: Roboto;
   color: #2e3738;
 }
-
-$parallax-height: 100vh;
-$center-margin: 0px auto;
 
 // #landscape {
 // }
