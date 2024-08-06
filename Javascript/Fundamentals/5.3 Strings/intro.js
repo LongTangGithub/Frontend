@@ -28,3 +28,22 @@ function checkSpam(str) {
 console.log( checkSpam('buy ViAgRa now') );
 console.log( checkSpam('free xxxx') );
 console.log( checkSpam('innocent rabbit') );
+//------------------------------------------------------------------------------------
+
+/**
+ * ! Truncate the text
+ * 
+ * Create a function truncate(str, maxlength) that checks the length of the str and, 
+ * if it exceeds maxlength – replaces the end of str with the ellipsis character "…", 
+ * to make its length equal to maxlength.
+ * 
+ * ? The result of the function should be truncated (if needed)
+ */
+
+function truncate(str, maxLength){
+    if (str.length > maxLength) {
+        return str.slice(0, maxLength - 1) + "...";
+    }
+}
+
+console.log( truncate("What I'd like to tell on this topic is:", 20));        // "What I'd like to te…"
