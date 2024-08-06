@@ -1,20 +1,30 @@
 /**
- * ! Write a function `checkSubstring` that takes two arguments: `mainString` and `subString`
- * ! The argument should return `true` if `substring` is found within `mainString`, and `false` otherwise
+ * ! Update the first character
  * 
- * ? Use the include method for this problem
+ * Write a function `ucFirst(str) that returns the string `str` with the uppercased first character
  */
 
-function checkSubstring(mainString, subString) {
-    return mainString.includes(subString);
+function ucFirst(str) {
+    return str.at(0).toUpperCase() + str.slice(1)
+
 }
 
-console.log(checkSubstring("Hello, world!", "world")); // true
-console.log(checkSubstring("JavaScript is awesome", "Python")); // false
-console.log(checkSubstring("OpenAI GPT-4", "GPT")); // true
-
-
+console.log( ucFirst("john") );
+//------------------------------------------------------------------------------------
 
 /**
+ * ! Check for spam
  * 
+ * Write a function `checkSpam(str)` that returns `true` if `str` contains `viagra` or `XXX, otherwise false
+ * 
+ * ? Must be case insensitive
  */
+
+function checkSpam(str) {
+    let newStr = str.toLowerCase();
+    return newStr.includes("viagra") || newStr.includes("xxx");
+}
+
+console.log( checkSpam('buy ViAgRa now') );
+console.log( checkSpam('free xxxx') );
+console.log( checkSpam('innocent rabbit') );
