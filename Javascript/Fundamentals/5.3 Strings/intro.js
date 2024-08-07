@@ -60,7 +60,8 @@ console.log( truncate("What I'd like to tell on this topic is:", 20));        //
  */
 
 function extractCurrencyValue(str){
-    return str.slice(1);
+    return parseInt(str.slice(1));
 }
 
 console.log( extractCurrencyValue("$120") === 120);
+
