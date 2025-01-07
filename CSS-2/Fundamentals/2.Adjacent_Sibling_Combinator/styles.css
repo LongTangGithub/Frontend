@@ -1,0 +1,8 @@
+.h1 + .h2 {
+    color: blueviolet;
+}
+
+/* Won't Work since h3 is not adjacent after h1*/
+.h1 + .h3 {
+    color: red;
+}
