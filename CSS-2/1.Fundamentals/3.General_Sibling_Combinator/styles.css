@@ -1,0 +1,9 @@
+/*  "~" allows us to select any siblings regardless define after a selector like h1 */
+.h1 ~ .h3 {
+    color: aquamarine;
+}
+
+/* This will not work because h4 through h6 is wrapped around a div, and no longer sibling selectors*/
+.h1 ~ .h4 {
+    color: blue;
+}

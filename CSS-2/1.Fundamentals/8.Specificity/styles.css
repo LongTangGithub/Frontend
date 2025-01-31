@@ -1,0 +1,19 @@
+/* Specificity is a point system that determines which selectors gets applied */
+
+/* Ranking system */
+/* style attributes, ids, classes, elements */
+
+/* 0 1 0 0 */
+#title {
+    color: purple;
+}
+
+/* 0 0 1 0 */
+.title {
+    color: red;
+}
+
+/* 0 0 0 1 */
+h1 {
+    color: green !important;
+}
