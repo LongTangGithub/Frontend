@@ -1,0 +1,4 @@
+/* If we want to select any element another element, including grandchildren or grand grandchildren, use the space with no combinator  */
+.div .h4 {
+    color: blueviolet;
+}

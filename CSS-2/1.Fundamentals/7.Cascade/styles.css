@@ -1,0 +1,13 @@
+
+/* The second rule set overrule the first rulew set */
+/* The cascade is the algorithm that determines which conflicting css rules is to be applied on a HTML element*/
+
+/* The cascade checks for the order of appearance, specificity, and importance */
+
+h1 {
+    color: red;
+}
+
+h1 {
+    color: green;
+}

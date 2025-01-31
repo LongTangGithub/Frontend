@@ -1,0 +1,9 @@
+/* ">" The child combinator is use to select elements that are direct children of a parent, not grandchildren*/
+div > .h4 {
+    color: red;
+}
+
+/* If you want to modify a specific parent, use a class or id */
+.div > .h4{
+    color: blue;
+}
