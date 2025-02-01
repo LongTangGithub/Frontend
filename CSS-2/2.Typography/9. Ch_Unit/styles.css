@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Ch is short for character and the Ch unit is useful for Typography
+   The fundamental design principle is tto have your text between the 
+   ranges of 45 to 75 characters
+
+   Anything more will be more wide which is a no no
+   1 Ch = 1 character
+*/
+.first-header {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: underline red dashed 3px;
+    text-align: center;
+}
+
+p {
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 70ch;
+}
