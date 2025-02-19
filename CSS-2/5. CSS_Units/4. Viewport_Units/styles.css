@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Don't use vw unit since it doesnt account for the scrollbar */
+/* The vh unit is troublesome for mobile users because the nav bar will not show when we scroll down */
+/* use dvh instead of vh */
+
+/* ✅ vh & vw → Fullscreen layouts (Hero sections, Modals)
+✅ vmin → Maintain aspect ratio (Icons, Images, Squares)
+✅ vmax → Ensure large elements on wide screens (Modals, Cards)
+✅ vw → Responsive typography */
+
+
+.hero {
+    border: 5px solid red;
+    height: 100dvh;  /* Full viewport height */
+    width: 100dvw;   /* Full viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1738430275589-2cd3d0d0d57a?q=80&w=2061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover;
+    color: white;
+    font-size: 3dvw;
+}
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+/* Use vmax for a modal that stays large even on ultra wide screens */
+.modal {
+    width: 40vmax;
+    height: 30vmax;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vmax;       
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);;
+}
+
+/* Use vmin to ensure icon, images, squares maintaining aspect ratio */
+.square-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square {
+    width: 70vmin;
+    height: 40vmin;
+    background: red;
+    text-align: center;
+    font-size: 2vmax;
+    color: white;
+}

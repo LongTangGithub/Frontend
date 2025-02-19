@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+    height: 50vh;
+    border: 5px solid blue;
+}
+/* Having an element set the height to 100% (percentage) is not going to work without having a parent with a height set because percentages is relative to the parent */
+.hero {
+    background-color: lightblue;
+    height: 50%;
+}

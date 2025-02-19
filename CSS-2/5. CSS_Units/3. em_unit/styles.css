@@ -1,0 +1,21 @@
+/* Try not to have multiple parents have the same em unit defined */
+/* em is not relative to em but rem  */
+/* Use em for relative sizing in components (like buttons or cards) that should scale with their parent. */
+
+
+.small-btn {
+    font-size: 1rem;
+}
+
+.large-btn {
+    font-size: 2rem;
+}
+/* If you were to scale up the button, you only need to change the font-size because the padding, border radius is relative to it */
+button {
+    font-size: 1.2em; /* Scales with parent font-size */
+    padding: 0.5em 1em; /* Relative to font-size */
+    border-radius: 0.5em; /* Keeps proportions */
+    background: blue;
+    color: white;
+    border: none;
+}

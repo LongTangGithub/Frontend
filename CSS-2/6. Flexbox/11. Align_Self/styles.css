@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    /* flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline; */
+    height: 500px;
+    border: 5px solid black;
+    /* flex-wrap: wrap;
+    align-content: center;
+    gap: 16px 5px;  */
+}
+
+.item {
+    width: 100px;
+    /* height: 100px; */
+    border: 5px solid red;
+    background-color: pink;
+}
+
+/* When we use the align items property, it pushes all the item, what if we want to push an item individually? */
+
+.item_1 {
+    flex: 1 1 0;
+    align-self: flex-end;
+}
+
+.item_2{
+    flex: 1;
+    align-self: center;
+}
+
+.item_3 {
+    flex: 1;
+    align-self: stretch;
+}
