@@ -4,7 +4,8 @@
 *::after {
     box-sizing: border-box;
 }
-
+/* BEM: Blocks, Elements & Modifiers */
+/* We want to use utility classes and they are reusable multiple times, hence "header"  */
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +16,52 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+
 .header {
+    border: 1px solid red;
+    margin-inline: auto;
+    width: 90%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    padding: 1rem 0;
+}
+
+.header__title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    flex: 1;
+}
+
+.header__menu {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.header__btn-container {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
 }
