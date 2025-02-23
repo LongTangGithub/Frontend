@@ -62,6 +62,42 @@ button {
     display: none;
 }
 
+/* Media Queries */
+@media (max-width: 891px) {
+    /* header section */
+    .header__title {
+        font-size: 1.2rem;
+    }
+
+    .header__link {
+        font-size: 0.8rem;
+    }
+
+    .header__btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 713px) {
+    .header {
+        justify-content: space-between;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__btn-container {
+        display: none;
+    }
+    .header__bars {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .header__title {
+        flex: 0 1 auto;
+    }
+}
+
 /* Hero Section */
 .hero {
     text-align: center;
@@ -84,6 +120,45 @@ button {
 
 }
 
+@media (max-width: 891px) {
+    .hero__title {
+        font-size: 3rem;
+    }
+    .hero__description {
+        font-size: 1rem;
+        margin: 1.5rem auto;
+    }
+}
+
+@media (max-width: 713px) {
+    .hero {
+        margin-top: 5rem;
+    }
+    .hero__title {
+        font-size: 2.5rem;
+    }
+    .hero__description {
+        font-size: 0.9rem;
+        margin: 1rem auto;
+    }
+    .hero__btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 526px) {
+    .hero__title {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 421px) {
+    .hero__title {
+        font-size: 1.5rem;
+    }
+
+}
 /* Pricing Section */
 .pricing {
     margin-top: 10rem;
@@ -205,40 +280,6 @@ button {
     margin: 1rem auto;
 }
 
-/* Media Queries */
-@media (max-width: 880px) {
-    .header__title {
-        font-size: 1.2rem;
-    }
-
-    .header__link {
-        font-size: 0.8rem;
-    }
-
-    .header__btn {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 704px) {
-    .header {
-        justify-content: space-between;
-    }
-    .header__menu {
-        display: none;
-    }
-    .header__btn-container {
-        display: none;
-    }
-    .header__bars {
-        display: block;
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-    .header__title {
-        flex: 0 1 auto;
-    }
-}
 
 /* Utility Classes */
 .btn {
